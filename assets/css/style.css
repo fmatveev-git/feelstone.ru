@@ -161,7 +161,7 @@ section{border-top:3px double var(--ink)}
 .about{background:var(--ink);color:var(--paper);border-top:0}
 .about .wrap{padding-block:72px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px;align-items:center}
 .about-photo{display:flex;flex-direction:column;gap:8px}
-.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 45%}
+.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 60%}
 .about .cap{color:#CFC6B8}
 .about-text{display:flex;flex-direction:column;gap:18px;min-width:0}
 .about .label{color:var(--gold-soft)}
