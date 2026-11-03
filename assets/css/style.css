@@ -52,7 +52,7 @@ section{border-top:3px double var(--ink)}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);padding-block:48px 72px}
 .hero-text{display:flex;flex-direction:column;justify-content:space-between;gap:32px;padding-right:48px;min-width:0}
 .hero-photo{border-left:1px solid var(--ink);padding-left:48px;min-width:0;display:flex;flex-direction:column;gap:10px}
-.hero-photo img{width:100%;flex:1 1 auto;height:0;min-height:560px;object-fit:cover;object-position:50% 30%}
+.hero-photo img{width:100%;flex:1 1 auto;height:0;min-height:560px;object-fit:cover;object-position:30% 0%}
 .hero h1{font-weight:900;font-size:clamp(48px,7vw,100px);line-height:.95;letter-spacing:-.02em}
 .hero h1 em{font-weight:400}
 .hero-lead{font-size:20px;line-height:1.55;max-width:30em}
@@ -83,7 +83,7 @@ section{border-top:3px double var(--ink)}
   .top .btn{min-height:38px;padding:0 14px;font-size:12px}
   .hero .wrap{gap:14px;padding-block:12px 40px}
   .hero-photo{gap:0}
-  .hero-photo img{min-height:0;height:clamp(190px,34svh,360px);object-position:50% 8%}
+  .hero-photo img{min-height:0;height:clamp(190px,34svh,360px);object-position:50% 12%}
   .hero-photo figcaption{display:none}
   .hero-text{gap:28px}
   .hero-main{gap:12px}
