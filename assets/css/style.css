@@ -101,19 +101,18 @@ section{border-top:3px double var(--ink)}
 @media (max-width:480px){.facts{grid-template-columns:1fr}.facts div+div{border-left:0;padding-left:0;border-top:1px solid var(--ink);margin-top:12px}}
 
 /* трансформеры */
-.tr-grid{display:flex;flex-direction:column;gap:40px}
-.tr-photos{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,4fr);gap:24px;align-items:start}
+.tr-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:40px;align-items:start}
+.tr-side{display:flex;flex-direction:column;gap:28px;min-width:0}
 .tr-grid figure{display:flex;flex-direction:column;gap:8px;min-width:0}
-.tr-grid img{width:100%;aspect-ratio:1/1;object-fit:cover}
-.tr-grid figure:first-child img{aspect-ratio:3/4}
-.steps{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
-.steps li{display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px;padding:22px 20px 22px 0;border-bottom:1px solid var(--ink)}
-.steps li+li{border-left:1px solid var(--ink);padding-left:20px}
-.steps .n{font:900 46px/1 var(--f-display)}
-.steps b{display:block;font:800 22px/1.2 var(--f-display);margin-bottom:6px}
-.steps span{color:var(--muted);font-size:17px}
-@media (max-width:860px){.steps{grid-template-columns:1fr}.steps li+li{border-left:0;padding-left:0}}
-@media (max-width:560px){.tr-photos{gap:12px}}
+.tr-grid img{width:100%;object-fit:cover}
+.tr-bases img{aspect-ratio:3/4}
+.tr-balls img{aspect-ratio:1/1}
+.steps{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.steps li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid var(--ink)}
+.steps .n{font:900 42px/1 var(--f-display)}
+.steps b{display:block;font:800 21px/1.2 var(--f-display);margin-bottom:4px}
+.steps span{color:var(--muted);font-size:16px}
+@media (max-width:860px){.tr-grid{grid-template-columns:1fr;gap:28px}.tr-balls{max-width:62%}}
 
 /* подбор шара */
 .picker{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}
