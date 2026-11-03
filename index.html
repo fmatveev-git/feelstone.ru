@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Feelstone</title>
+<meta name="description" content="Заметные украшения из Испании: трансформеры со сменными шарами Carolina Olivares и Jake SL. Отбор — Мария, с 2017 года. Заказ в Telegram и MAX, доставка по России и СНГ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;0,900;1,400;1,600&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">Feelstone</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#transform">Трансформеры</a>
+      <a href="#picker">Подбор шара</a>
+      <a href="#brands">Бренды</a>
+      <a href="#maria">Мария</a>
+      <a href="#looks">Образы</a>
+      <a href="#order">Как заказать</a>
+    </nav>
+    <a class="btn btn-ink" href="https://t.me/feelstone_msk">Написать</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="hero-text">
+        <div style="display:flex;flex-direction:column;gap:24px">
+          <span class="label">Испания · с 2017 года</span>
+          <h1 id="hero-h">Заметные украшения <em>из Испании</em></h1>
+          <p class="hero-lead">Украшения-трансформеры со сменными шарами: одна основа и новый цвет под настроение. Заказ — в пару сообщений, доставка по России и СНГ.</p>
+          <div class="byline">
+            <img src="assets/img/maria-avatar.webp" alt="" width="200" height="200">
+            <div><b>Отбор — Мария</b>основательница Feelstone, сама выбирает каждую партию в Испании</div>
+          </div>
+          <div class="hero-ctas">
+            <a class="btn btn-ink" href="https://t.me/feelstone_msk">Заказать в Telegram <span aria-hidden="true">→</span></a>
+            <a class="btn btn-line" href="https://max.ru/id7722334693_biz">Заказать в MAX <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="facts">
+          <div><b>2017</b><span>работаем с брендами Испании</span></div>
+          <div><b>1 200 ₽</b><span>сменный шар — от</span></div>
+          <div><b>РФ и СНГ</b><span>доставка в фирменной упаковке</span></div>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/img/maria-trench-necklace.webp" alt="Мария, основательница Feelstone, в тренче и длинном колье из жемчуга и цветных бусин" width="960" height="1280">
+        <figcaption class="cap">Мария в длинном колье из жемчуга и цветных бусин</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="transform" aria-labelledby="tr-h">
+    <div class="wrap sec">
+      <div class="sec-head">
+        <h2 id="tr-h">Одна основа — десятки образов</h2>
+        <p>Кольца, браслеты, серьги и колье Carolina Olivares и Jake SL собираются как конструктор.</p>
+      </div>
+      <div class="tr-grid">
+        <figure>
+          <img src="assets/img/balls-plate.webp" alt="Десятки цветных сменных шаров в белой тарелке" width="800" height="800" loading="lazy">
+          <figcaption class="cap">Однотонные, с узором и металлические шары</figcaption>
+        </figure>
+        <ol class="steps">
+          <li><span class="n">1</span><div><b>Выберите основу</b><span>Кольцо, браслет, серьги или колье — в серебре или позолоте.</span></div></li>
+          <li><span class="n">2</span><div><b>Подберите шары</b><span>Десятки цветов и фактур. Сменный шар — от 1 200 ₽.</span></div></li>
+          <li><span class="n">3</span><div><b>Меняйте под настроение</b><span>Шар меняется руками за пару секунд: утром — офис, вечером — ужин.</span></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="picker" aria-labelledby="pk-h">
+    <div class="wrap sec">
+      <div class="sec-head">
+        <h2 id="pk-h">Подберите цвет шара</h2>
+        <p>Выберите украшение и нажмите на цвет — шар на фото поменяется. В палитре шары, которые есть у нас сейчас.</p>
+      </div>
+      <div class="picker">
+        <div class="photo-col">
+          <div class="tabs" role="tablist" aria-label="Украшение">
+            <button class="tab" role="tab" id="tab-bracelet" aria-selected="true" aria-controls="frame">Браслет</button>
+            <button class="tab" role="tab" id="tab-ring" aria-selected="false" aria-controls="frame">Кольцо</button>
+          </div>
+          <div class="frame" id="frame" role="tabpanel" aria-live="polite"></div>
+          <p class="cap" id="photo-cap"></p>
+        </div>
+        <div class="panel">
+          <div class="now">
+            <span class="label">Выбранный шар</span>
+            <span class="name" id="now-name">Серебро</span>
+            <span class="sub" id="now-sub">Как на фото</span>
+          </div>
+          <div class="balls" id="balls" role="group" aria-label="Цвет шара"></div>
+          <div class="advice">
+            <img src="assets/img/maria-avatar.webp" alt="" width="200" height="200">
+            <p><span class="label">Совет Марии</span>Сомневаетесь в цвете? Пришлите фото своего образа — подберу шар, который к нему подойдёт, и покажу его на живом фото.</p>
+          </div>
+          <p class="cap">На фото — настоящие шары из нашей коллекции, перенесённые на украшение. Точный оттенок и наличие уточнит менеджер.</p>
+          <div class="ctas">
+            <a class="btn btn-ink" href="https://t.me/feelstone_msk">Заказать в Telegram <span aria-hidden="true">→</span></a>
+            <a class="btn btn-line" href="https://max.ru/id7722334693_biz">Заказать в MAX <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="brands" aria-labelledby="br-h">
+    <div class="wrap sec">
+      <div class="sec-head">
+        <h2 id="br-h">Наши бренды</h2>
+        <p>Работаем напрямую с испанскими марками.</p>
+      </div>
+      <div class="brand-grid">
+        <div class="brand"><span class="label">Сменные шары</span><h3>Carolina Olivares</h3><p>Браслеты, кольца, серьги и колье со сменными шарами. Позолота, серебрение, жемчуг.</p></div>
+        <div class="brand"><span class="label">Сменные шары</span><h3>Jake SL</h3><p>Кольца и браслеты-трансформеры в серебре и золоте.</p></div>
+        <div class="brand"><span class="label">Кожа и камни</span><h3>Pikadura</h3><p>Натуральная кожа, натуральные камни, браслеты с монетами.</p></div>
+        <div class="brand"><span class="label">Кристаллы</span><h3>LaMala &amp; LaFea</h3><p>Смелые формы, кристаллы Swarovski и эмаль.</p></div>
+        <div class="brand"><span class="label">Миниатюра</span><h3>Le Petit Bijou</h3><p>Маленькие серьги и пусеты с кристаллами Swarovski.</p></div>
+        <div class="brand"><span class="label">Также в продаже</span><h3>Arnau, Dorado, Marisol</h3><p>Другие испанские марки в нашем ассортименте.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="maria" aria-labelledby="ab-h">
+    <div class="wrap">
+      <figure class="about-photo">
+        <img src="assets/img/maria-star-ring.webp" alt="Мария с серебряным кольцом-звездой у лица" width="589" height="990" loading="lazy">
+        <figcaption class="cap">Мария, основательница Feelstone</figcaption>
+      </figure>
+      <div class="about-text">
+        <span class="label">Колонка основательницы</span>
+        <h2 id="ab-h">Я выбираю украшения в Испании — для вас</h2>
+        <div class="letter">
+          <p>С 2017 года я привожу в Россию и СНГ украшения испанских брендов. Каждую партию отбираю сама: примеряю, смотрю, как вещь ведёт себя в жизни, и беру только то, что хочется носить каждый день и что замечают.</p>
+          <p>Больше всего люблю трансформеры. Одна основа — и каждый день новый цвет: шар меняется за пару секунд. Если не знаете, с чего начать, напишите мне — соберём комбинацию под ваш гардероб.</p>
+          <p class="sign">Мария<small>основательница Feelstone</small></p>
+        </div>
+        <div class="about-video">
+          <video id="maria-video" controls playsinline preload="none" poster="assets/img/maria-video-poster.webp" src="assets/video/maria-unboxing.mp4" aria-label="Мария показывает жемчужные колье из новой партии"></video>
+          <div style="display:flex;flex-direction:column;gap:8px;min-width:0">
+            <span class="label">Новая партия</span>
+            <p>Мария распаковывает и показывает колье из последней поставки — так выглядят украшения вживую, без студийного света.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="looks" aria-labelledby="lk-h">
+    <div class="wrap sec">
+      <div class="sec-head">
+        <h2 id="lk-h">Образы</h2>
+        <p>Крупные формы, позолота, жемчуг — украшения, которые видно издалека.</p>
+      </div>
+      <div class="mosaic">
+        <figure><div class="im"><img src="assets/img/look-ring-bracelet-coffee.webp" alt="Руки с кофе и газетой: золотое кольцо и браслет с серебряными шарами" width="800" height="1000" loading="lazy"></div><figcaption class="cap">Кольцо и браслет со сменными шарами</figcaption></figure>
+        <figure><div class="im"><img src="assets/img/look-gold-cuff.webp" alt="Золотой браслет-кафф с шарами на руке" width="800" height="1066" loading="lazy"></div><figcaption class="cap">Браслет-кафф с шарами</figcaption></figure>
+        <figure><div class="im"><img src="assets/img/look-pearl-sautoir.webp" alt="Длинное колье из жемчуга на кружевном топе" width="800" height="1072" loading="lazy"></div><figcaption class="cap">Колье-сотуар из жемчуга</figcaption></figure>
+        <figure><div class="im"><img id="img-ring" src="assets/img/look-gold-ring.webp" alt="Золотое кольцо с шарами и чашка кофе" width="800" height="1066" loading="lazy"></div><figcaption class="cap">Кольцо со сменным шаром</figcaption></figure>
+        <figure><div class="im"><img src="assets/img/look-earring.webp" alt="Серьга с золотым шаром" width="800" height="1066" loading="lazy"></div><figcaption class="cap">Серьги со сменным шаром</figcaption></figure>
+        <figure><div class="im"><img id="img-bracelet" src="assets/img/look-silver-bracelet.webp" alt="Серебряный браслет Carolina Olivares со сменным шаром" width="800" height="1067" loading="lazy"></div><figcaption class="cap">Браслет Carolina Olivares, серебро</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" aria-labelledby="or-h">
+    <div class="wrap sec">
+      <div class="sec-head">
+        <h2 id="or-h">Как заказать</h2>
+        <p>Без корзины и регистрации — просто напишите нам.</p>
+      </div>
+      <ol class="order-steps">
+        <li><span class="n">1</span><b>Напишите нам</b><span>В Telegram или MAX — где вам удобнее.</span></li>
+        <li><span class="n">2</span><b>Подберём украшение</b><span>Пришлём фото и видео, поможем собрать комбинацию шаров.</span></li>
+        <li><span class="n">3</span><b>Оплата</b><span>Менеджер подскажет удобный способ оплаты.</span></li>
+        <li><span class="n">4</span><b>Доставка</b><span>По России и СНГ, в фирменной упаковке Feelstone.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="cta-h">
+    <div class="wrap">
+      <div>
+        <h2 id="cta-h">Новые партии — <em>сначала в канале Марии</em></h2>
+        <p>Подписывайтесь, чтобы первыми видеть новинки, распаковки и новые цвета шаров.</p>
+      </div>
+      <div class="cta-links">
+        <a class="btn btn-ink" href="https://t.me/maria_feelstone_msk">Telegram-канал <span aria-hidden="true">→</span></a>
+        <a class="btn btn-line" href="https://max.ru/id7722334693_biz">Канал в MAX <span aria-hidden="true">→</span></a>
+        <a class="btn btn-line" href="https://www.instagram.com/maria_feelstone/">Instagram <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <span class="label">Продавец и владелец сайта</span>
+      <dl class="req">
+        <dt>Продавец</dt><dd>ИП Ртищева Мария Петровна</dd>
+        <dt>ИНН</dt><dd>773471224360</dd>
+        <dt>ОГРНИП</dt><dd>326774600506090 от 17.07.2026</dd>
+      </dl>
+    </div>
+    <div class="foot-meta">
+      <span>© Feelstone, 2017–2026</span>
+      <span>Москва · доставка по России и СНГ</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/picker-data.js"></script>
+<script src="assets/js/picker.js"></script>
+</body>
+</html>
