@@ -1,0 +1,54 @@
+# Выкладка сайта на хостинг reg.ru по FTP при каждом изменении ветки main.
+# Нужны секреты репозитория (Settings → Secrets and variables → Actions):
+#   FTP_SERVER   — адрес FTP-сервера из письма reg.ru (например, server123.hosting.reg.ru)
+#   FTP_USERNAME — логин FTP
+#   FTP_PASSWORD — пароль FTP
+#   FTP_DIR      — (необязательно) папка сайта на сервере, по умолчанию www/feelstone.ru/
+# Пока секретов нет, выкладка пропускается и ничего не ломает.
+name: Выкладка на reg.ru
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-regru
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Проверить, что FTP настроен
+        id: check
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        run: |
+          if [ -z "$FTP_SERVER" ]; then
+            echo "Секреты FTP ещё не добавлены — выкладка пропущена."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Получить файлы сайта
+        if: steps.check.outputs.ready == 'true'
+        uses: actions/checkout@v4
+
+      - name: Загрузить на хостинг
+        if: steps.check.outputs.ready == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          server-dir: ${{ secrets.FTP_DIR || 'www/feelstone.ru/' }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            README.md
+            CHANGELOG.md
+            CNAME
