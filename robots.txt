@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://feelstone.ru/sitemap.xml
+Sitemap: https://feel-stone.ru/sitemap.xml
