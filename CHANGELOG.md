@@ -1,5 +1,10 @@
 # Журнал версий
 
+## v1.5 — 05.11.2026 · переезд на хостинг reg.ru (подготовка)
+
+- Добавлена автоматическая выкладка на хостинг reg.ru по FTPS (`.github/workflows/deploy-regru.yml`). Включится, когда в репозиторий добавят секреты FTP_SERVER, FTP_USERNAME, FTP_PASSWORD.
+- Причина переезда: у части российских провайдеров GitHub Pages не открывается (ERR_CONNECTION_RESET).
+
 ## v1.4.1 — 04.11.2026
 
 - Добавлены robots.txt и sitemap.xml — для Яндекс Вебмастера и Google Search Console.
