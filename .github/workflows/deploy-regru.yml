@@ -3,7 +3,7 @@
 #   FTP_SERVER   — адрес FTP-сервера из письма reg.ru (например, server123.hosting.reg.ru)
 #   FTP_USERNAME — логин FTP
 #   FTP_PASSWORD — пароль FTP
-#   FTP_DIR      — (необязательно) папка сайта на сервере, по умолчанию www/feelstone.ru/
+#   FTP_DIR      — (необязательно) папка сайта на сервере, по умолчанию www/feel-stone.ru/
 # Пока секретов нет, выкладка пропускается и ничего не ломает.
 name: Выкладка на reg.ru
 
@@ -44,7 +44,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          server-dir: ${{ secrets.FTP_DIR || 'www/feelstone.ru/' }}
+          server-dir: ${{ secrets.FTP_DIR || 'www/feel-stone.ru/' }}
           exclude: |
             **/.git*
             **/.git*/**
